@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#80deea"
+    tools:context=".pantallaFrecuencias">
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro2"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/intro2"
+        android:onClick="altas"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/boton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="115dp"
+                android:text="@string/boton2" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/boton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="115dp"
+                android:text="@string/boton3"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
