@@ -23,6 +23,7 @@ public class pantallaFrecuencias extends AppCompatActivity {
 
                 Intent altas = new Intent(pantallaFrecuencias.this, Pantalla_Altas.class);
                 startActivity(altas);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
 
             }
         });
@@ -35,6 +36,7 @@ public class pantallaFrecuencias extends AppCompatActivity {
 
                 Intent bajas = new Intent(pantallaFrecuencias.this, Pantalla_Bajas.class);
                 startActivity(bajas);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
 
             }
         });

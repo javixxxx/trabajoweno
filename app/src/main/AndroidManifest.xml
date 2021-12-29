@@ -20,11 +20,13 @@
         <activity
             android:name=".pantallaFrecuencias"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+           />
         <activity
             android:name=".prueba2"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="true"

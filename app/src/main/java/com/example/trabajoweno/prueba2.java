@@ -23,6 +23,7 @@ public class prueba2 extends AppCompatActivity {
 
                 Intent comenzar = new Intent(prueba2.this, pantallaFrecuencias.class);
                 startActivity(comenzar);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
 
             }
         });

@@ -71,7 +71,7 @@
                 android:layout_marginTop="70dp"
                 android:onClick="test"
                 android:backgroundTint="#009688"
-                app:cornerRadius="20dp"
+                app:cornerRadius="30dp"
                 android:text="@string/boton1" />
         </TableRow>
 
