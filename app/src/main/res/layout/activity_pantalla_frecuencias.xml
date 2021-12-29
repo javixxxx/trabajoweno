@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#80deea"
+    android:background="@drawable/fondo3"
     tools:context=".pantallaFrecuencias">
 
     <TextView
@@ -30,6 +30,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
                 android:layout_marginLeft="115dp"
+                android:backgroundTint="#009688"
+                app:cornerRadius="20dp"
                 android:text="@string/boton2" />
         </TableRow>
 
@@ -40,6 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="115dp"
+                android:backgroundTint="#009688"
+                app:cornerRadius="20dp"
                 android:text="@string/boton3"
                 />
         </TableRow>
