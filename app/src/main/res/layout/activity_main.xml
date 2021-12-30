@@ -2,20 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/fondo3"
+
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/color">
 
     <TextView
         android:id="@+id/JODIDO_IMAGE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:fontFamily="sans-serif-black"
-        android:text="¿TIENE PROBLEMAS DE OÍDO?"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="¿Tienes problemas de audición?"
+        android:textAlignment="center"
         android:textColor="#009688"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/SORDERA_IMAGE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -24,24 +27,27 @@
         android:id="@+id/SORDERA_IMAGE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
-        android:fontFamily="sans-serif-black"
-        android:text="LOS MEJORES PROFESIONALES A TU DISPOSICION"
+        android:layout_marginBottom="236dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Nuestro equipo de profesionales está a tu disposición"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#009688"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/LOGO_IMAGE"
-        android:layout_width="272dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="230dp"
+        android:layout_width="336dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="152dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logopeque" />
+        app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

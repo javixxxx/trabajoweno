@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/fondo3"
     tools:context=".prueba2">
 
@@ -12,68 +12,75 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/intro1"
-        android:textSize="30sp"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/intro1"
+        android:textColor="@color/intro1"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/intro1"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:inputType="text"
+        android:text="@string/nombre"
+        android:textColor="@color/nombre"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/text3"
+        app:layout_constraintStart_toStartOf="@+id/text3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/text3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:inputType="text"
+        android:text="@string/apellidos"
+        android:textColor="@color/apellidos"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
 
-        <TableRow>
-            <EditText
-                android:id="@+id/text2"
-                android:text="@string/nombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="100dp"
-                android:inputType="text"
-                android:textStyle="italic"
-                android:textColor="@color/nombre"/>
-        </TableRow>
-        <TableRow>
-            <EditText
-                android:id="@+id/text3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/apellidos"
-                android:layout_marginTop="50dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="100dp"
-                android:inputType="text"
-                android:textStyle="italic"
-                android:textColor="@color/apellidos"/>
-        </TableRow>
-        <TableRow>
-            <EditText
-                android:id="@+id/text4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/edad"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginRight="100dp"
-                android:inputType="number"
-                android:textStyle="italic"
-                android:textColor="@color/edad"/>
-        </TableRow>
 
-        <TableRow>
+    <EditText
+        android:id="@+id/text4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:text="@string/edad"
+        android:textColor="@color/edad"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/text3"
+        app:layout_constraintStart_toStartOf="@+id/text3"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
 
-            <Button
-                android:id="@+id/boton1"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="70dp"
-                android:onClick="test"
-                android:backgroundTint="#009688"
-                app:cornerRadius="30dp"
-                android:text="@string/boton1" />
-        </TableRow>
 
-    </TableLayout>
-</LinearLayout>
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#009688"
+        android:onClick="test"
+        android:text="@string/boton1"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
