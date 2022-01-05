@@ -5,21 +5,18 @@
     android:id="@+id/linearLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo3"
     tools:context=".prueba2">
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginTop="100dp"
         android:text="@string/intro1"
-        android:textColor="@color/intro1"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -28,10 +25,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
+        android:fontFamily="sans-serif-light"
         android:inputType="text"
         android:text="@string/nombre"
-        android:textColor="@color/nombre"
-        android:textStyle="italic"
+        android:textColor="#000000"
+        android:textSize="18.3sp"
         app:layout_constraintEnd_toEndOf="@+id/text3"
         app:layout_constraintStart_toStartOf="@+id/text3"
         app:layout_constraintTop_toTopOf="parent" />
@@ -75,12 +73,17 @@
         android:layout_marginEnd="64dp"
         android:backgroundTint="#009688"
         android:onClick="test"
+        android:textColor="#ffffff"
         android:text="@string/boton1"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

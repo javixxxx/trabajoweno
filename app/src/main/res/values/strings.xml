@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">trabajoweno</string>
-    <string name="intro1">Regístrate en AUDITEST</string>
-    <string name="nombre">Introduzca su nombre</string>
-    <string name="apellidos">Introduzca sus apellidos</string>
-    <string name="edad">Introduzca su edad</string>
+    <string name="intro1">Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="edad">Edad</string>
     <string name="boton1">Comenzar el AUDITEST</string>
     <string name="intro2">Elige la prueba que quieras realizar:</string>
     <string name="boton2">Frecuencias altas</string>
