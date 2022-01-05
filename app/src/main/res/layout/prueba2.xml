@@ -5,8 +5,8 @@
     android:id="@+id/linearLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color"
     tools:context=".prueba2">
-
 
     <TextView
         android:id="@+id/text1"
@@ -14,12 +14,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="224dp"
         android:text="@string/intro1"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/LOGO_IMAGE"
+        android:layout_width="336dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/text2"
@@ -49,7 +61,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text2" />
 
-
     <EditText
         android:id="@+id/text4"
         android:layout_width="0dp"
@@ -63,27 +74,23 @@
         app:layout_constraintStart_toStartOf="@+id/text3"
         app:layout_constraintTop_toBottomOf="@+id/text3" />
 
-
     <Button
         android:id="@+id/boton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="64dp"
         android:backgroundTint="#009688"
         android:onClick="test"
-        android:textColor="#ffffff"
         android:text="@string/boton1"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text4" />
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
