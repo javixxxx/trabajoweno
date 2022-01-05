@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class app extends AppCompatActivity { /** MyActivity o como lo quieras llamar */
@@ -19,6 +20,7 @@ public class app extends AppCompatActivity { /** MyActivity o como lo quieras ll
 
     Button buttonstart = (Button) this.findViewById(R.id.buttonstart);
     Button buttonstop = (Button) this.findViewById(R.id.buttonstop);
+    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 
     MediaPlayer mMediaPlayer;
     @Override
@@ -35,15 +37,16 @@ public class app extends AppCompatActivity { /** MyActivity o como lo quieras ll
                 } 
             }
         });
-
         buttonstop.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v) {
                 if (v.getId() == R.id.buttonstop) {
                     mMediaPlayer.stop();
+                    displaySeconds();
                 }
             }
         });
+
     }
     public void displaySeconds() {
         long startTime = System.currentTimeMillis();
@@ -54,7 +57,9 @@ public class app extends AppCompatActivity { /** MyActivity o como lo quieras ll
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
                 TextView secondsText = (TextView) findViewById(R.id.textView);
-                secondsText.setText(String.valueOf(Seconds));
+                /*secondsText.setText(String.valueOf(Seconds));*/
+                if(timeElapsed>4) secondsText.setText("@string/apto");
+                else secondsText.setText("@string/no_apto");
             }
         });
     }
