@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/fondo3"
-    tools:context=".pantallaFrecuencias"
-    >
+    tools:context=".pantallaFrecuencias">
+
 
     <TextView
         android:id="@+id/text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="60dp"
         android:minHeight="48dp"
         android:onClick="altas"
         android:text="@string/intro2"
         android:textColor="@color/intro2"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="#009688"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="@string/boton2"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/boton3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/boton3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TableRow>
-            <Button
-                android:id="@+id/boton2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:layout_marginLeft="115dp"
-                android:backgroundTint="#009688"
-                app:cornerRadius="20dp"
-                android:shadowRadius="@integer/material_motion_duration_long_1"
-                android:text="@string/boton2" />
-        </TableRow>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="#009688"
+        android:text="@string/boton3"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton2" />
 
-        <TableRow>
-            <Button
-                android:id="@+id/boton3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginStart="115dp"
-                android:backgroundTint="#009688"
-                app:cornerRadius="20dp"
-                android:text="@string/boton3"
-                />
-        </TableRow>
-    </TableLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
