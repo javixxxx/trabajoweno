@@ -1,7 +1,9 @@
 package com.example.trabajoweno;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,10 +16,10 @@ public class MyActivity extends AppCompatActivity { /** MyActivity o como lo qui
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); /** No se como se llamara tu layout, he puesto main_activity, pero puede ser otra */
+        setContentView(R.layout.activity_pantalla_altas); /** No se como se llamara tu layout, he puesto main_activity, pero puede ser otra */
         mMediaPlayer = MediaPlayer.create(MyActivity.this,R.raw.sonido_pitido); /** El nombre lo he puesto aleatorio, tienes que poner el nombre del tuyo, MyActivity.this,R.raw.aleatorio */
         /** tienes que meter tu sonido en "app/src/main/res/raw/" */
-        buttonstart.setOnClickListener(new OnClickListener(){
+        buttonstart.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v) {
                 if (v.getId() == R.id.buttonstart) {
@@ -31,7 +33,7 @@ public class MyActivity extends AppCompatActivity { /** MyActivity o como lo qui
     public void displaySeconds() {
         long startTime = System.currentTimeMillis();
         long timeElapsed = System.currentTimeMillis() - startTime;
-        final String Seconds = timeElapsed / 1000;
+        final String Seconds = String.valueOf(timeElapsed / 1000);
         mMediaPlayer.start();
         mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override

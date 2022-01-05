@@ -14,4 +14,5 @@
     <string name="scroll">En esta prueba se va a reproducir un sonido de elevada frecuencia.Cuando deje de escuchar el
         sonido,pulse el boton de acabar prueba y recibirá un informe sobre su estado auditivo. Dicho informe establecerá si usted ha pasado el test o , si por el contrario,
         ha de acudir a un especialista para evaluar qué medidas se han de tomar ante su problema</string>
+    <string name="finalizar_prueba">finalizar_prueba</string>
 </resources>

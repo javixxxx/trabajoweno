@@ -36,6 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <ScrollView
         android:layout_width="350dp"
         android:layout_height="300dp"
@@ -61,5 +62,15 @@
 
 
     </ScrollView>
+
+    <Button
+        android:id="@+id/buttonstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009688"
+        android:text="@string/finalizar_prueba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="632dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
