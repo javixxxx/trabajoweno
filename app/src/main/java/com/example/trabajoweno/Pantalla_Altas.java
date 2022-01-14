@@ -55,7 +55,7 @@ public class Pantalla_Altas extends AppCompatActivity {
                 public void onCompletion(MediaPlayer mediaPlayer) {*/
                     TextView secondsText = (TextView) findViewById(R.id.textView);
                     /*secondsText.setText(String.valueOf(Seconds));*/
-                    if (timeElapsed > 4) secondsText.setText(getResources().getString(R.string.apto));
+                    if (timeElapsed > 4000) secondsText.setText(getResources().getString(R.string.apto));
                     else secondsText.setText(getResources().getString(R.string.no_apto));
                 }
             }/*);
