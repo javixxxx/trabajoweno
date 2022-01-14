@@ -21,7 +21,7 @@ public class Pantalla_Altas extends AppCompatActivity {
         Button buttonstart = (Button) findViewById(R.id.buttonstart);
         Button buttonstop = (Button) findViewById(R.id.buttonstop);
         /*AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);*/
-        mMediaPlayer = MediaPlayer.create(Pantalla_Altas.this, R.raw.sonido_pitido); /** El nombre lo he puesto aleatorio, tienes que poner el nombre del tuyo, MyActivity.this,R.raw.aleatorio */
+        mMediaPlayer = MediaPlayer.create(Pantalla_Altas.this, R.raw.bajas); /** El nombre lo he puesto aleatorio, tienes que poner el nombre del tuyo, MyActivity.this,R.raw.aleatorio */
         /** tienes que meter tu sonido en "app/src/main/res/raw/" */
         buttonstart.setOnClickListener(new View.OnClickListener() {
             @Override
