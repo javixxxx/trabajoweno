@@ -26,7 +26,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/gradient"
 
         android:text="@string/empezar_prueba"
